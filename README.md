@@ -1,2 +1,2 @@
 # node-javaScript
-It's my repo for javascript
+It's my first repo for javascript
