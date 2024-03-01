@@ -80,3 +80,53 @@
     let stringNumber=String(someNumber);
     console.log(stringNumber); // output : 33 it's okay but 
     console.log(typeof stringNumber); //output : string
+
+
+
+    //-------------->Operation<----------------
+
+    let value=4;
+    let negValue=-value; 
+    console.log(negValue); // output : -4
+    //basic arithmatic operations --> I'll not discuss this one
+    let str1 = "hello";
+    let str2 = "Ashim";
+    let str3 = str1+ str2;
+    console.log(str3); //output : hello Ashim 
+
+    // so in the above code there's no problem
+
+    // let's try these operations
+    console.log(1+"2"); //output : 12
+    console.log("1"+2); //output : 12
+     // how? one string and other one is number 
+
+     //let's try another one
+     console.log("1"+2+2);//output :122
+      // but I though output would be 14 but it's 122 how?? what's the problem ? why all are treating as string ??
+      
+      //let's do something else...
+      console.log(2+2+"1"); //output : 41
+      // how ?? so 
+      //so there're some rules when we convert one datatype into another datatype  
+      // read ECMA standard 
+
+      console.log(3+3+56+7*7); // these type of statement are good for exam pov. not for real life use-->use parenthesis
+
+      // tricky conversion
+
+      console.log(true); //true
+      console.log(+true);//output :1 ..increament
+      // console.log(true+); // error
+      console.log(+""); //output :1
+
+
+      let num1,num2,num3;
+      num1=num2=num3=2+2; //why 2+2 ?? write readable code 
+
+
+      let gameCounter=100;
+      gameCounter++; //postfix 
+      console.log(gameCounter); // output : 101
+
+      ++gameCounter; //prefix 
