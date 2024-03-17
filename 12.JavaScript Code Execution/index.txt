@@ -1,0 +1,45 @@
+        javascript execution context - how do a javascript program run?
+{}  -> global execution context<-- refers to 'this' value window object
+
+i. global execution context
+2. Function execution context
+3. Eval execution context
+
+{} -> memory creation phase
+   -> execution phase 
+
+1. global execution <- 'this'
+2. memory phase --> only memory allocation 
+      let var1=10 ;   initially var1 will be undefined
+      let var2= 5;   -> undefined 
+      function add (var1,var2) {
+        let total = var1+var2;
+        return total
+      } // add definition
+     let result1= add(var1,var2);   // result1 <- undefined
+     let result2= add(50,60)         // result2 <- undefined
+ // this is first cycle of a javascript Program or code
+
+ 3. Execution phase 
+      var1 will be initialized with the value 10
+      var2 <- 5
+      what about add ()? definition is already defined 
+
+      result1 ? what will be value inside result1 ? obviously there's a function .. 
+      so that function will create a separate execution context .. 
+      so again there will be two phase 
+       1.New variable environment
+       2.Execution Thread        // new executional context for every call -> two phase 
+                 1.Memory creation phase
+                 2.Execution phase
+
+                 // then function will return some value and that will be returned in global context
+
+                 and after execution of a function memory will be taken back from the function.. that's it 
+
+                 browser 
+                 1. Inspect
+                 2. Source
+                 3. create new snippet
+                 4. and then write code 
+                 5. now see how they execute
