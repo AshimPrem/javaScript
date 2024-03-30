@@ -118,7 +118,7 @@
       console.log(true); //true
       console.log(+true);//output :1 ..increament
       // console.log(true+); // error
-      console.log(+""); //output :1
+      console.log(+""); //output :0
 
 
       let num1,num2,num3;
